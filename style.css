@@ -1,0 +1,101 @@
+/*Propriedades do navegador*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Todo corpo da página*/
+body * {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+/*Planos de fundo do projeto*/
+body {
+  background: url(./assets/bg-dark-mobile.jpg) no-repeat top center/cover;
+}
+
+/*Caixa do conteúdo principal*/
+#container {
+  width: 360px;
+  margin: 56px auto 0;
+  padding: 0 24px;
+}
+
+/*Foto de perfil*/
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+}
+
+/* Username */
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  padding: 8px;
+}
+
+/* Links */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+ul li a {
+  /* Tamanho e alinhamento dos botões */
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  justify-content: center;
+  
+  /* cores e borda dos botões */
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+
+  /* Transparência do botão */
+  backdrop-filter: Blur(4px);
+  -webkit-backdrop-filter: Blur(4px);
+
+  /* Estilização do texto */
+  text-decoration: none;
+  font-weight: 500;
+  
+  transition: background 0.2s;
+}
+
+/* Hover do botão */
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border: 0.5px solid white;
+}
+
+/* Ícones das redes sociais */
+#redes-sociais {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  font-size: 24px;
+}
+
+#redes-sociais a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#redes-sociais a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
