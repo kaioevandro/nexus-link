@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* Ajustes na raiz do documento */
 :root {
   --text-color: white;
   --bg-url: url(./assets/bg-dark-mobile.jpg);
@@ -14,6 +15,7 @@
   --highlight-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Cores e urls do modo claro */
 .light {
   --text-color: black;
   --bg-url: url(./assets/bg-light-mobile.jpg);
