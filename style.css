@@ -1,4 +1,4 @@
-/*Propriedades do navegador*/
+/*Propriedades do navegador */
 * {
   padding: 0;
   margin: 0;
@@ -27,18 +27,18 @@
   --switch-bg-url: url(./assets/sun.svg)
 }
 
-/* Todo corpo da página*/
+/* Todo corpo da página */
 body * {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
 }
 
-/*Planos de fundo do projeto*/
+/*Planos de fundo do projeto */
 body {
   background: var(--bg-url) no-repeat top center/cover;
 }
 
-/*Caixa do conteúdo principal*/
+/* Caixa do conteúdo principal */
 #container {
   width: 360px;
   margin: 56px auto 0;
@@ -62,15 +62,33 @@ body {
   padding: 8px;
 }
 
-/* Botão do modo claro*/
+/* Botão do modo claro e noturno */
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+
 #switch button {
   width: 32px;
   height: 32px;
   background: white var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
+
+  top: 50%;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
 }
 
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
+/* Track do botão modo claro */
 #switch span {
   display: block;
   width: 64px;
@@ -81,6 +99,7 @@ body {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
 }
+
 /* Links */
 ul {  
   list-style: none;
@@ -93,10 +112,11 @@ ul {
 ul li a {
   /* Tamanho e alinhamento dos botões */
   display: flex;
-  padding: 16px 24px;
   align-items: center;
   justify-content: center;
-  
+
+  padding: 16px 24px;
+    
   /* cores e borda dos botões */
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
