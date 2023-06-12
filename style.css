@@ -13,6 +13,7 @@
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(255, 255, 255, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.1);
+  --switch-bg-url: url(./assets/moon-stars.svg)
 }
 
 /* Cores e urls do modo claro */
@@ -23,6 +24,8 @@
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/sun.svg)
+
 }
 
 /* Todo corpo da página*/
@@ -60,8 +63,17 @@ body {
   padding: 8px;
 }
 
+/* Botão do modo claro*/
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+}
+
 /* Links */
-ul {
+ul {  
   list-style: none;
   display: flex;
   flex-direction: column;
