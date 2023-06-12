@@ -7,12 +7,20 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-dark-mobile.jpg)
+  --bg-url: url(./assets/bg-dark-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(255, 255, 255, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.1);
 }
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-light-mobile.jpg)
+  --bg-url: url(./assets/bg-light-mobile.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Todo corpo da página*/
@@ -67,8 +75,8 @@ ul li a {
   justify-content: center;
   
   /* cores e borda dos botões */
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
   border-radius: 8px;
 
   /* Transparência do botão */
@@ -84,7 +92,7 @@ ul li a {
 
 /* Hover do botão */
 ul li a:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--surface-color-hover);
   border: 0.5px solid var(--text-color);
 }
 
@@ -107,5 +115,5 @@ ul li a:hover {
 }
 
 #redes-sociais a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--highlight-color);
 }
